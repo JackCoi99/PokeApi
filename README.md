@@ -81,7 +81,7 @@ Documentación oficial: https://pokeapi.co/docs/v2
 1. Clonar el repositorio:
 
 ```
-git clone <repository-url>
+git clone <(https://github.com/JackCoi99/PokeApi.git)>
 ```
 
 2. Acceder a la carpeta del proyecto:
