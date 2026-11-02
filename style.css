@@ -1,0 +1,155 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5fa;
+    color: #252b42;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    background-color: #263b80;
+    color: white;
+    padding: 25px 5%;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* BUSCADOR */
+
+.buscador {
+    display: flex;
+    gap: 10px;
+    width: 450px;
+    max-width: 100%;
+}
+
+.buscador input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.buscador button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5c542;
+    color: #263b80;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buscador button:hover {
+    background-color: #ffda70;
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+    width: 100%;
+    padding: 45px 5%;
+}
+
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.contenido p {
+    color: #68718a;
+    margin-bottom: 30px;
+}
+
+/* POKEMON GRID */
+
+#pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #263b80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 25px 5%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .buscador input {
+        width: 100%;
+    }
+
+    main {
+        padding: 30px 5%;
+    }
+
+    .contenido h2 {
+        font-size: 23px;
+    }
+
+    #pokemon-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
