@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeApi</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PokeApi - Explorer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>PokeApi</h1>
+        <div class="header-content">
+            <h1>Pokemon Explorer</h1>
+            <div class="buscador">
+                <input type="text" id="pokemon-input" placeholder="Introduce el nombre del Pokemon...">
+                <button id="buscar-btn">Buscar</button>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="search-container">
-            <input type="text" id="pokemon-search" placeholder="Busca un Pokémon...">
-            <button id="search-button">Buscar</button>
-        </section>
-
-        <section id="status-message"></section>
-
-        <section id="pokemon-list">
-            <!-- Pokemon list will be populated here -->
-        </section>
+        <div class="contenido">
+            <section id="status-message"></section>
+            <section id="pokemon-container">
+                <!-- Pokemon list will be populated here -->
+            </section>
+        </div>
     </main>
+
+    <footer>
+        <p>2026 Pokemon Explorer. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
